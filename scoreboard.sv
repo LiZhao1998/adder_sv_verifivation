@@ -10,7 +10,7 @@ class scoreboard;
             ref_item = new();
             ref_item.copy(item);
 
-            if (ref_item.rstn)
+            if (!ref_item.rstn)
                 {ref_item.carry, ref_item.sum} = ref_item.a + ref_item.b;
             else 
                 {ref_item.carry, ref_item.sum} = 0;
